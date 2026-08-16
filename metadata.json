@@ -1,0 +1,6 @@
+{
+  "name": "WellJourney 康旅途",
+  "description": "Restorative wellness retreats, comprehensive medical checkup accompaniment, and slow-living cultural stays in Quanzhou.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
