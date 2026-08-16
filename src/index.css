@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FDFBF7;
+  --color-beige: #F5F0EB;
+  --color-tea: #2C5E43;
+  --color-tea-light: #3A7856;
+  --color-tea-dark: #1F422F;
+  --color-terracotta: #C87D55;
+  --color-terracotta-light: #D98E66;
+  --color-amber: #D4A359;
+  --color-charcoal: #222222;
+  --color-slate: #555555;
+
+  --font-serif: "Noto Serif SC", serif;
+  --font-sans: "Noto Sans SC", sans-serif;
+  
+  --shadow-soft: 0 10px 40px -10px rgba(44, 94, 67, 0.08);
+  --shadow-up: 0 -10px 40px -10px rgba(0, 0, 0, 0.08);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FDFBF7; 
+}
+::-webkit-scrollbar-thumb {
+  background: #D4A359; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C87D55; 
+}
+
+@keyframes panSlow {
+  0% { transform: scale(1.03) translate(0, 0); }
+  100% { transform: scale(1.12) translate(-1.5%, -1.5%); }
+}
+
+.hero-zoom {
+  animation: panSlow 25s ease-in-out infinite alternate;
+}
